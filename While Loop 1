@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float number = 0;
+    
+    cout << "Enter a number: ";
+    cin >> number;
+    float total = 0;
+    
+    while (number != 0) {
+        
+        total += number;
+        cout << "The loop will continue," << endl;
+        cout << "Enter a number: ";
+        cin >> number;
+    }
+    cout << total;
+
+    return 0;
+}
