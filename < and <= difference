@@ -1,0 +1,55 @@
+// EXAMPLE 1
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    // get a number input
+    int n;
+    cin >> n;
+
+    // initial value of total is 1
+    int total = 1;
+    int i = 1;
+    int actual = 1;
+    
+    // find the factorial
+    while (i < n) {
+
+        total = actual * (i + 1);
+        actual = total;
+        i++;
+    }
+    cout << total;
+
+    return 0;
+}
+
+
+-----------------------------------------------------
+//EXAMPLE 2
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    // get a number input
+    int n;
+    cin >> n;
+
+    // initial value of total is 1
+    int total = 1;
+    int i = 1;
+
+    // find the factorial
+    while (i <= n) {
+        total = total * i;
+        i = i + 1;
+    }
+
+    cout << total;
+
+    return 0;
+}
