@@ -1,0 +1,31 @@
+// How dynamic programming works on a simple small scale
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    // initialize count to 0
+    int count = 0;
+
+    // get integer input for number
+    int number;
+    cin >> number;
+
+    // loop from i = 1 to number
+    // if number is divisible by i, increase count by 1
+    for (int i = 1; i <= number; i++) {
+        if (number % i == 0) {
+            count += 1;
+        }
+    }
+
+    // print "prime" if count is 2 else print "not prime"
+    if (count == 2) {
+        cout << "prime";
+    }
+    else {
+        cout << "not prime";
+    }
+
+    return 0;
+}
