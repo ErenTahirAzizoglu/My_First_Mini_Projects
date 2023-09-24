@@ -1,0 +1,32 @@
+// Finding the sum of digits with a While LOOP
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+// get integer input for number
+
+    int number;
+    cin >> number;
+
+// create remainder and sum variables
+
+    int remainder = 0;
+
+// use while loop to find sum of digits
+
+    while (number > 0) {
+
+        if (number % 10 >= 0) {
+            remainder += number % 10;
+            number /= 10;
+        }
+    }
+
+// print remainder
+
+    cout << remainder;
+
+    return 0;
+}
